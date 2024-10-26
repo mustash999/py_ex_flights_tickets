@@ -11,8 +11,8 @@ class NotificationManager:
 	
 	def send_sms(self, bodytext):
 		message = self.client.messages.create(
-			from_='+17324106584',
+			from_=os.getenv('TWILIO_PHONE_NUMBER'),
 			body=bodytext,
-			to='+34695086573')
+			to=os.getenv('MY_PHONE_NUMBER')
 		print(message.sid)
 
