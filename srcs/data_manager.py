@@ -1,6 +1,6 @@
-import requests
-import os
-from dotenv import load_dotenv
+import 		requests
+import 		os
+from 		dotenv import load_dotenv
 
 class DataManager:
 	def __init__(self):

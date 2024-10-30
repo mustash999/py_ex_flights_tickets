@@ -15,8 +15,3 @@ class NotificationManager:
 			body=bodytext,
 			to=os.getenv('MY_NUM'))
 		print(message.sid)
-
-
-
-send = NotificationManager()
-send.send_sms("Hello, this is a test message from the Notification Manager.")
